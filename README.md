@@ -1,6 +1,7 @@
 # GameEngine
 QGDC Game Engine
 
+Please make sure, when working to properly link opengl, glew and glfw ( follow these instruction [LINK HERE](http://www.41post.com/5178/programming/opengl-configuring-glfw-and-glew-in-visual-cplusplus-express) ) to properly link on visual studio).
 
 Game Engine Architecture:
 
