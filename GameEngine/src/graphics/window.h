@@ -5,8 +5,6 @@
 #include "..\IO\input.h"
 #include "..\Math\math.h"
 
-
-
 namespace GameEngine {
 	namespace Graphics {
 		class Window {
