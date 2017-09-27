@@ -5,7 +5,7 @@
 #include "src\Math\math.h"
 #include "src\Utils\fileutils.h"
 
-//Testing out the rendering
+//Testing out the rendering by drawing a square, this is far too complicated and will be simplified in the future
 
 void test()
 {
@@ -28,6 +28,8 @@ void test()
 	glEnableVertexAttribArray(0);
 }
 
+
+//very important main loop that incorporates multiple elements of the game engine
 int main()
 {
 	using namespace GameEngine;
@@ -35,6 +37,7 @@ int main()
 	using namespace IO;
 	using namespace Maths;
 
+	//setting up the window and giving it a name
 	Window window("Game Engine", 1024, 768);
 	glClearColor(0.2f, 0.1f, 0.7f, 1.0f);
 
@@ -44,10 +47,11 @@ int main()
 	test();
 
 
-
+	//using shaders
 	Shader shader("src/shaders/basic.vert", "src/shaders/basic.frag");
 	shader.enable();
 
+	//main rendering loop
 	while (!window.Closed()) 
 	{
 		window.Clear();

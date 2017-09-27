@@ -1,5 +1,8 @@
 #include "math.h" 
 
+//basic math class for matrices and vectors
+//TODO Refactor maths into an interface that provides access to proper classes
+
 namespace GameEngine { namespace Maths {
 
 	float toRadians(float degrees)

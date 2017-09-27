@@ -1,6 +1,7 @@
 #include "Window.h"
 namespace GameEngine {
 	namespace Graphics {
+		//class implements all rendering
 		Window::Window(const char* _name, int _width, int _height) 
 		{
 			name = _name;

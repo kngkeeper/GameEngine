@@ -1,5 +1,7 @@
 #include "input.h"
 
+//callbacks are implemented within the window class, should find a way to do the callbacks
+//within this class instead for code readability
 
 namespace GameEngine {
 	namespace IO {
@@ -13,10 +15,13 @@ namespace GameEngine {
 
 		Input::Input() {
 			
+			//GLFW_KEY_LAST is the max numbers of keys
 			for (int i = 0; i < GLFW_KEY_LAST; i++)
 			{
 				keys[i] = -1;
 			}
+
+			//GLFW_MOUSE_BUTTON_LAST is the max number of mouse buttons
 			for (int i = 0; i < GLFW_MOUSE_BUTTON_LAST; i++) 
 			{
 				buttons[i] = -1;

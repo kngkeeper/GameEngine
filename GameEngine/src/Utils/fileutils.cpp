@@ -1,4 +1,10 @@
 #include "fileutils.h"
+
+//basic file utilities (such as read file from path)
+//TODO: Read 3d objects and properly process
+//TODO: Read audio and process
+//TODO: Some form of virtual asset management
+
 namespace GameEngine {
 	std::string read_file(const char *filepath)
 	{
