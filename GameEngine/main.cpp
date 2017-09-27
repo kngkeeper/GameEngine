@@ -5,6 +5,8 @@
 #include "src\Math\math.h"
 #include "src\Utils\fileutils.h"
 
+//Testing out the rendering
+
 void test()
 {
 	GLfloat vertices[] =
