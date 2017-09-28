@@ -1,7 +1,7 @@
 #pragma once
 #include "renderable2D.h"
-#include <GL\glew.h>
-#include "..\Math\math.h"
+#include <GL/glew.h>
+#include "../Math/math.h"
 
 namespace GameEngine {
 	namespace Graphics {

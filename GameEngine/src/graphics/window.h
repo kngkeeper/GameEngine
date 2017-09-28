@@ -1,9 +1,9 @@
 #pragma once
-#include <GL\glew.h>
-#include <GLFW\glfw3.h>
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
 #include <iostream>
-#include "..\IO\input.h"
-#include "..\Math\math.h"
+#include "../IO/input.h"
+#include "../Math/math.h"
 
 namespace GameEngine {
 	namespace Graphics {

@@ -1,10 +1,10 @@
 #pragma once
 
-#include "buffers\buffers.h"
-#include "buffers\indexbuffer.h"
-#include "buffers\vertexarray.h"
+#include "buffers/buffers.h"
+#include "buffers/indexbuffer.h"
+#include "buffers/vertexarray.h"
 
-#include "..\Math\math.h"
+#include "../Math/math.h"
 #include "shader.h"
 
 namespace GameEngine {

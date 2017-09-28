@@ -1,16 +1,16 @@
 #include <iostream>
-#include "src\graphics\window.h"
-#include "src\graphics\shader.h"
-#include "src\IO\input.h"
-#include "src\Math\math.h"
-#include "src\Utils\fileutils.h"
+#include "src/graphics/window.h"
+#include "src/graphics/shader.h"
+#include "src/IO/input.h"
+#include "src/Math/math.h"
+#include "src/Utils/fileutils.h"
 
-#include "src\graphics\buffers\buffers.h"
-#include "src\graphics\buffers\indexbuffer.h"
-#include "src\graphics\buffers\vertexarray.h"
+#include "src/graphics/buffers/buffers.h"
+#include "src/graphics/buffers/indexbuffer.h"
+#include "src/graphics/buffers/vertexarray.h"
 
-#include "src\graphics\renderer2D.h"
-#include "src\graphics\simple2DRenderer.h"
+#include "src/graphics/renderer2D.h"
+#include "src/graphics/simple2DRenderer.h"
 
 
 //Testing out the rendering by drawing a square, this is far too complicated and will be simplified in the future
