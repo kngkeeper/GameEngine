@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <linux/string.h>
 
 
 namespace GameEngine

@@ -1,4 +1,7 @@
 #include "fileutils.h"
+#ifdef __unix
+#define fopen_s(pFile,filename,mode) ((*(pFile))=fopen((filename),(mode)))==NULL
+#endif
 
 //basic file utilities (such as read file from path)
 //TODO: Read 3d objects and properly process
