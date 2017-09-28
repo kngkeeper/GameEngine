@@ -1,14 +1,13 @@
 
-
 all: main
 
-main: main.o window.o shader.o input.o math.o fileutils.o buffers.o indexbuffer.o vertexarray.o renderer2D.o simple2DRenderer.o
-	g++ -o main -lglfw -lGLEW -lGL -std=c++11
+main: main.o
+	g++ main.o window.o shader.o input.o math.o fileutils.o buffers.o indexbuffer.o vertexarray.o simple2DRenderer.o -o main -lglfw -lGLEW -lGL -std=c++11
 
-main.o: window.o shader.o input.o math.o fileutils.o buffers.o indexbuffer.o vertexarray.o renderer2D.o simple2DRenderer.o
+main.o: window.o shader.o input.o math.o fileutils.o buffers.o indexbuffer.o vertexarray.o simple2DRenderer.o
 	g++ -c main.cpp -std=c++11
 
-simple2DRenderer.o: renderer2D.o
+simple2DRenderer.o:
 	g++ -c ./src/graphics/simple2DRenderer.cpp -std=c++11
 
 renderable2D.o: buffers.o indexbuffer.o vertexarray.o math.o shader.o
@@ -23,8 +22,7 @@ shader.o: fileutils.o math.o
 vertexarray.o: buffers.o
 	g++ -c ./src/graphics/buffers/vertexarray.cpp -std=c++11
 
-renderer2D.o: math.o
-	g++ -c ./src/graphics/renderer2D.h -std=c++11
+
 
 input.o:
 	g++ -c ./src/IO/input.cpp -std=c++11
@@ -39,5 +37,7 @@ buffers.o:
 	g++ -c ./src/graphics/buffers/buffers.cpp -std=c++11
 
 indexbuffer.o:
-	g++ -c ./src/graphics/buffers/indexbuffers.cpp -std=c++11
+	g++ -c ./src/graphics/buffers/indexbuffer.cpp -std=c++11
 
+clean:
+	rm -r *.o
