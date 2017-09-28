@@ -41,8 +41,8 @@ int main()
 
 	Renderable2D sprite2(vec3(7, 1, 0), vec2(2, 3), vec4(0, 1, 0, 1), shader);
 	Simple2DRenderer renderer;
-
-	shader.setUniform2f("light_pos", vec2(4.0f, 1.5f));
+	vec2 initLightPos(4.0f, 1.5f);
+	shader.setUniform2f("light_pos", initLightPos);
 
 
 	while (!window.Closed())
