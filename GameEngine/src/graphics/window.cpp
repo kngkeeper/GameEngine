@@ -1,4 +1,4 @@
-#include "Window.h"
+#include "window.h"
 namespace GameEngine {
 	namespace Graphics {
 		//class implements all rendering
