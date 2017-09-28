@@ -1,5 +1,3 @@
-clean:
-	rm -r *.o
 
 all: main
 
@@ -41,3 +39,5 @@ buffers.o:
 indexbuffer.o:
 	g++ -c ./src/graphics/buffers/indexbuffer.cpp -std=c++11
 
+clean:
+	rm -r *.o
