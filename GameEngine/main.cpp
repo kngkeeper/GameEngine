@@ -13,9 +13,6 @@
 #include "src/graphics/simple2DRenderer.h"
 
 
-//Testing out the rendering by drawing a square, this is far too complicated and will be simplified in the future
-
-
 
 
 //very important main loop that incorporates multiple elements of the game engine
