@@ -51,7 +51,8 @@ int main()
 		double x, y;
 		x = Input::GetInstance().getX();
 		y = Input::GetInstance().getY();
-		shader.setUniform2f("light_pos", vec2((float)(x * 16.0f / 960.0f), (float)(y * 9.0f / 540.0f)));
+		vec2 LightPos((float)(x * 16.0f / 960.0f), (float)(y * 9.0f / 540.0f));
+		shader.setUniform2f("light_pos",LightPos);
 		
 		renderer.submit(&sprite);
 		renderer.submit(&sprite2);
