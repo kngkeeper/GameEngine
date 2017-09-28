@@ -85,6 +85,8 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>C:\GLFW\include;C:\GLEW\include;$(IncludePath)</IncludePath>
     <LibraryPath>C:\GLFW\lib-vc2015;C:\GLEW\lib\Release\x64;$(LibraryPath)</LibraryPath>
+    <OutDir>..\bin\Debug</OutDir>
+    <IntDir>..\bin\Debug\Intermediates</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IncludePath>C:\GLFW\include;C:\GLEW\include;$(IncludePath)</IncludePath>
@@ -144,6 +146,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\graphics\buffers\buffers.cpp" />
+    <ClCompile Include="src\graphics\buffers\indexbuffer.cpp" />
+    <ClCompile Include="src\graphics\buffers\vertexarray.cpp" />
     <ClCompile Include="src\graphics\shader.cpp" />
     <ClCompile Include="src\graphics\window.cpp" />
     <ClCompile Include="src\IO\input.cpp" />
@@ -151,6 +156,9 @@
     <ClCompile Include="src\Utils\fileutils.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\graphics\buffers\buffers.h" />
+    <ClInclude Include="src\graphics\buffers\indexbuffer.h" />
+    <ClInclude Include="src\graphics\buffers\vertexarray.h" />
     <ClInclude Include="src\graphics\shader.h" />
     <ClInclude Include="src\graphics\window.h" />
     <ClInclude Include="src\IO\input.h" />

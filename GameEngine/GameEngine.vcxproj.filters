@@ -26,6 +26,15 @@
     <ClCompile Include="src\graphics\shader.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\graphics\buffers\buffers.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\buffers\indexbuffer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\buffers\vertexarray.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\graphics\window.h">
@@ -35,6 +44,9 @@
     <ClInclude Include="src\Math\math.h" />
     <ClInclude Include="src\Utils\fileutils.h" />
     <ClInclude Include="src\graphics\shader.h" />
+    <ClInclude Include="src\graphics\buffers\buffers.h" />
+    <ClInclude Include="src\graphics\buffers\indexbuffer.h" />
+    <ClInclude Include="src\graphics\buffers\vertexarray.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="src\shaders\basic.vert" />
