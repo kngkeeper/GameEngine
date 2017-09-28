@@ -71,26 +71,26 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>($ProjectDir)Dependencies\GLEW\include;($ProjectDir)Dependencies\GLFW\include;$(IncludePath)</IncludePath>
-    <LibraryPath>($ProjectDir)Dependencies\GLFW\lib-vc2015;($ProjectDir)Dependencies\GLEW\lib\Release\x64;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)Dependencies\GLEW\include;$(ProjectDir)Dependencies\GLFW\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)Dependencies\GLFW\lib-vc2015;$(ProjectDir)Dependencies\GLEW\lib\Release\x64;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)bin\$(Configuration)\Intermediates\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>($ProjectDir)Dependencies\GLEW\include;($ProjectDir)Dependencies\GLFW\include;$(IncludePath)</IncludePath>
-    <LibraryPath>($ProjectDir)Dependencies\GLFW\lib-vc2015;($ProjectDir)Dependencies\GLEW\lib\Release\x64;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)Dependencies\GLEW\include;$(ProjectDir)Dependencies\GLFW\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)Dependencies\GLFW\lib-vc2015;$(ProjectDir)Dependencies\GLEW\lib\Release\x64;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)bin\$(Configuration)\Intermediates\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>($ProjectDir)Dependencies\GLEW\include;($ProjectDir)Dependencies\GLFW\include;$(IncludePath)</IncludePath>
-    <LibraryPath>($ProjectDir)Dependencies\GLFW\lib-vc2015;($ProjectDir)Dependencies\GLEW\lib\Release\x64;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)Dependencies\GLEW\include;$(ProjectDir)Dependencies\GLFW\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)Dependencies\GLFW\lib-vc2015;$(ProjectDir)Dependencies\GLEW\lib\Release\x64;$(LibraryPath)</LibraryPath>
     <OutDir>..\bin\Debug</OutDir>
     <IntDir>..\bin\Debug\Intermediates</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>($ProjectDir)Dependencies\GLEW\include;($ProjectDir)Dependencies\GLFW\include;$(IncludePath)</IncludePath>
-    <LibraryPath>($ProjectDir)Dependencies\GLFW\lib-vc2015;($ProjectDir)Dependencies\GLEW\lib\Release\x64;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)Dependencies\GLEW\include;$(ProjectDir)Dependencies\GLFW\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)Dependencies\GLFW\lib-vc2015;$(ProjectDir)Dependencies\GLEW\lib\Release\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -98,6 +98,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>GLEW_STATIC;GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>opengl32.lib;glew32s.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -109,6 +110,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>opengl32.lib;glew32s.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -122,6 +124,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>GLEW_STATIC;GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -137,6 +140,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>GLEW_STATIC;GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -146,6 +150,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Makefile" />
     <ClCompile Include="src\graphics\buffers\buffers.cpp" />
     <ClCompile Include="src\graphics\buffers\indexbuffer.cpp" />
     <ClCompile Include="src\graphics\buffers\vertexarray.cpp" />

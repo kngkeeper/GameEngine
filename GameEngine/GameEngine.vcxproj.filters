@@ -38,6 +38,9 @@
     <ClCompile Include="src\graphics\simple2DRenderer.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="Makefile">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\graphics\window.h">
