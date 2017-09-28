@@ -4,7 +4,7 @@
 namespace GameEngine { namespace Graphics{
 	void Shader::setUniformMat4(const GLchar * name, const Maths::mat4 & matrix)
 	{
-		glUniformMatrix4fv(glGetUniformLocation(shaderID, name), 1, GL_FALSE, matrix.elements);
+		glUniformMatrix4fv(glGetUniformLocation(shaderID, name), 1, GL_FALSE, matrix.m.elements);
 	}
 	void Shader::setUniform1f(const GLchar * name, float value)
 	{
@@ -73,7 +73,7 @@ namespace GameEngine { namespace Graphics{
 			std::vector<char> error(length);
 			glGetShaderInfoLog(vert, length, &length, &error[0]);
 			std::string e(error.begin(), error.end());
-			std::cout << "Failed to compile vertex shader!\n" << e << std::endl;
+			std::cout << "Failed to compile vertex shader!/n" << e << std::endl;
 			glDeleteShader(vert);
 			return 0;
 		}
@@ -89,7 +89,7 @@ namespace GameEngine { namespace Graphics{
 			std::vector<char> error(length);
 			glGetShaderInfoLog(frag, length, &length, &error[0]);
 			std::string e(error.begin(), error.end());
-			std::cout << "Failed to compile fragment shader!\n" << e << std::endl;
+			std::cout << "Failed to compile fragment shader!/n" << e << std::endl;
 			glDeleteShader(frag);
 			return 0;
 		}
